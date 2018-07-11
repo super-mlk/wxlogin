@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container .bs{
+  width: 100%;
+  height: 500px;
+}
+
+/*滚动图片  */
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner image {
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/*tab  */
+.nav {
+  height: 88rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #fff;
+  font-size: 16px;
+  white-space: nowrap;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-item {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.nav-item.active {
+  color: #2da1dc;
+  border-bottom:2px solid #2da1dc;
+}
+
+.tab-box {
+  background: red;
+  height: 100px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tab-content {
+  overflow-y: scroll;
+}
+
+/*专家列表  */
+
+.container .content {
+  width: 96%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.container .content .specialist {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container .content .specialist .person-pic {
+  width: 30%;
+  height: 100px;
+}
+
+.container .content .specialist .person-pic image {
+  width: 100%;
+  height: 100px;
+}
+
+.container .content .specialist .article {
+  width: 65%;
+  height: 100px;
+  margin-left: 5%;
+}
+
+.container .content .specialist .article text {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .content .specialist .article .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container .content .specialist .article .synopsis {
+  font-size: 13px;
+  color: #808080;
+}
+
+.container .content .specialist .article .update {
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  color: #808080;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.container .content .specialist .article .extra {
+  font-size: 13px;
+  color: #4c4c4c;
+  margin-bottom: 0;
+}
+
+.container .content .specialist .info {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+
+.container .content .specialist .info text{
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 10px;
+  color: #999999;
+  text-align: right;
+}
+
+.container .content .specialist .info text:first-child{
+  font-size: 14px;
+  color: #ff6f07;
+  padding-bottom: 4px;
+}

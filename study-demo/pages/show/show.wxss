@@ -1,0 +1,61 @@
+/* pages/show/show.wxss */
+
+.container {
+  width: 100%;
+  height: 550rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.userInfo {
+  margin: auto;
+}
+
+.userInfo_image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.userInfo_name {
+  text-align: center;
+  margin-top: 30rpx;
+  color: #000;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  height: 70rpx;
+  margin: 20rpx;
+  line-height: 70rpx;
+  padding: 0 15rpx;
+}
+
+.list_Con {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-font {
+  flex: 2;
+  font-size: 28rpx;
+}
+
+.list_img {
+  flex: 1;
+  text-align: right;
+}
+
+.list_img image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.className{
+  background: red;
+  color: white;
+}

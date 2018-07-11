@@ -1,0 +1,4 @@
+<view>
+  <text class='flag'>{{flag}}</text>
+  <button class='pay' bindtap='pay' size='primary' style='width:100%;height:100px;background:Red;'></button>
+</view>

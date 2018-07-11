@@ -1,0 +1,2 @@
+<!--pages/yulan/yulan.wxml-->
+<button bindtap='openDocument'>预览</button>

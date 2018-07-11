@@ -1,0 +1,36 @@
+<!--数据库列表  -->
+<!--专家讲座-->
+<view class='container'>
+  <scroll-view  scroll-y bindscroll="scroll" class='bs'>
+    <view class='banner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false' indicator-color='{{indicatorcolor}}' indicator-active-color='{{indicatoractivecolor}}'>
+      <swiper-item wx:for="{{imgUrls}}">
+        <image src="{{item}}" bindtap='bannerClick'/>
+      </swiper-item>
+    </swiper>
+  </view>
+   <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}" bindscroll="bindscroll">
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+    </block>
+  </scroll-view>
+   <view class='content'>
+    <block wx:for="{{listArray}}">
+      <view class='specialist' bindtap='particularsBtn'>
+        <view class='person-pic'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='article'>
+          <text class='title'>{{item.title}}</text>
+          <text class='synopsis'>{{item.synopsis}}</text>
+          <text class='update'>{{item.update}}</text>
+          <text class='extra'>{{item.extra}}</text>
+        </view>
+        <view class='info'>
+          <text>{{item.money}}</text>
+        </view>
+      </view>
+    </block>
+  </view> 
+  </scroll-view>
+</view>

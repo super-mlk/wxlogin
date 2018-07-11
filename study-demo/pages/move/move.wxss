@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container .bg {
+  width: 100%;
+  height: 200px;
+  background: red;
+  margin: 0;
+  padding: 0;
+}
+
+.container .bg2 {
+  width: 100%;
+  height: 500px;
+  background: black;
+}
+.container .bg3 {
+  width: 100%;
+  height: 500px;
+  background: yellow;
+}
+.container .bg4 {
+  width: 100%;
+  height: 500px;
+  background: pink;
+}
+
+/* .container .bg2 text{
+  width: 100%;
+  height: 40px;
+  display: block;
+  background: red;
+} */
+
+.container .active{
+   width: 100%;
+  height: 500px;
+  background: #e8e8e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+

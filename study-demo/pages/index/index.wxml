@@ -1,0 +1,33 @@
+<view>
+  <button bindtap='load'>下载</button>
+</view>
+<view>
+  <button bindtap='openDocument'>打開文件</button>
+</view>
+<view>
+  <button bindtap='showModal'>弹窗</button>
+</view>
+<form>
+<button bindtap='onShareAppMessage' open-type="share">分享</button>
+</form>
+
+  <button bindtap="bindViewTap">点击弹出对话框</button>  
+  <view >  
+    <modal title="对话框" hidden="{{modalHidden}}" confirm-text="确定"  
+    cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">  
+      <input type='number' placeholder='请输入任意金额' min="1" max="100"/>
+    </modal>  
+  </view>  
+
+  <button bindtap='getMove'>获取豆瓣电影</button>
+  <block wx:for="{{listArray}}">
+     <view class='left'>
+      <image src='{{item.images.small}}'></image>
+    </view>
+    <view class='right' data-title="{{item['title']}}" bindtap='getTitle'>
+      <text>{{item['title']}}</text>
+      <text>上映时间:{{item['year']}}</text>
+      <text>类型:{{item['genres']}}</text>
+      <text>演员:{{item.casts['0'].name}} {{item.casts['1'].name}} {{item.casts['2'].name}}</text>
+    </view> 
+  </block>

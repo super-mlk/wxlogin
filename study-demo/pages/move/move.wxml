@@ -1,0 +1,15 @@
+<view class='container' bindtouchmove='handletouchmove'>
+  <!-- <view class='bg'></view>
+  <view class='bg2'>
+   <text>
+    x:{{x}}
+  </text>
+  <text>
+    y:{{y}}
+  </text>
+  </view> -->
+  <view class='bg'>{{ballTop}}</view>
+  <view class="bg2 {{tab == 1 ? 'active' : ''}}">{{ballTop}}</view>
+  <view class='bg3'>{{ballTop}}</view>
+  <view class='bg4'>{{ballTop}}</view>
+</view>

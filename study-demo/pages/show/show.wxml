@@ -1,0 +1,18 @@
+<!--pages/show/show.wxml-->
+<view class='container'>
+  <view class='userInfo'>
+    <image src='{{avatarUrl}}' class='userInfo_image'></image>
+    <view class='userInfo_name'>{{nickname}}</view>
+  </view>
+
+  <scroll-view scroll-y="true">
+    <navigator url="../logs/logs" class='list' wx:for="{{list}}" hover-class='className'>
+      <view class='list_Con'>
+        <view class='list-font'>{{item.name}}</view>
+        <view class='list_img'>
+          <image src='../../assets/img/right.png'></image>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

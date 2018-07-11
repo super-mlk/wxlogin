@@ -1,0 +1,8 @@
+<!--pages/movie/movie.wxml-->
+<block wx:for="{{list}}">
+  <navigator url='../showvideo/showvideo?index={{index}}' hover-class='className' >
+     <view class='list_Con'>
+      <text>{{item.name}}</text>
+     </view>
+  </navigator>
+</block>

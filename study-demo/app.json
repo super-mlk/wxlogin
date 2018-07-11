@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/showvideo/showvideo",
+    "pages/login/login",
+    "pages/show/show",
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/xiangce/xiangce",
+    "pages/pay/pay",
+    "pages/scroll-view-y/scroll-view-y",
+    "pages/scroll-view/scroll-view",
+    "pages/move/move",
+    "pages/yulan/yulan",
+    "pages/out/out",
+    "pages/pic/pic",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
